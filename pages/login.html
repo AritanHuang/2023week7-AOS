@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('./layout/head'); -%>
+
+  <body>
+    <%- include('./layout/header'); -%>
+      <section class="container mt-md-163 mt-127 vh-100">
+        <div class="mb-4">
+          <div class=" text-center">
+            <img class="mb-4" style="width: 32px; height: 32px;" src="/assets/images/sparkler.png" alt="sparkler">
+            <h2 class="noto-tc-serif fw-bold fs-24">會員登入</h2>
+          </div>
+        </div>
+        <form class="row justify-content-md-center">
+          <div class="col-sm-6 col-lg-4">
+            <div class="mb-4">
+              <label for="account" class="form-label">帳號</label>
+              <input type="text" class="form-control fs-20" id="account" placeholder="請輸入帳號">
+            </div>
+            <div class="mb-6 mb-md-8">
+              <label for="password" class="form-label">密碼</label>
+              <input type="password" class="form-control fs-20" id="password" placeholder="請輸入密碼">
+            </div>
+            <div>
+              <button type="submit" class="btn btn-primary mb-3 w-100 fw-bold fs-md-20 fs-18">登入<i
+                  class="icofont-rounded-double-right"></i></button>
+            </div>
+          </div>
+        </form>
+      </section>
+      <%- include('./layout/footer'); -%>
+
+        <script type="module" src="../main.js"></script>
+  </body>
+
+</html>

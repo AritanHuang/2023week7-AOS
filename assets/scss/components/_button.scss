@@ -1,0 +1,31 @@
+.buy-btn:hover:before {
+    content: '';
+    width: 29px;
+    height: 29px;
+    background-color: $secondary;
+    border-radius: 50%;
+    position: absolute;
+    left: -10px;
+    z-index: -1;
+    opacity: 1;
+    transition: opacity 0.3s ease; /* 添加漸變效果 */
+}
+.buy-btn:hover {
+    cursor: pointer;
+}
+
+.tag-button {
+    border-left: 4px solid $primary;
+    font-family: 'Noto Serif TC' !important;
+    font-weight: 700;
+    padding: 4px 16px;
+    &:hover {
+        border-left: 4px solid $secondary;
+    }
+    @include media-breakpoint-up(sm) {
+        padding: 4px 24px;
+    }
+}
+.event-detail-hover:hover {
+    color: $secondary;
+}
